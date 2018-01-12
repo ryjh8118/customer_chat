@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<package uuid="customer_chat-5f831d" version="0.0.0">
+ <names>
+  <name lang="en_US">customer_chat</name>
+ </names>
+ <supportedLanguages>
+  <language>en_US</language>
+  <language>zh_CN</language>
+  <language>zh_TW</language>
+ </supportedLanguages>
+ <descriptionLanguages>
+  <language>en_US</language>
+  <language>zh_CN</language>
+  <language>zh_TW</language>
+ </descriptionLanguages>
+ <contents>
+  <behaviorContent path="behavior_1">
+   <userRequestable/>
+   <nature>interactive</nature>
+   <autonomous>
+    <condition purpose="launchTrigger"><![CDATA[('Launchpad/NumPeopleZone1'>0)]]></condition>
+   </autonomous>
+   <permissions/>
+  </behaviorContent>
+  <dialogContent topicName="customer" typeVersion="1.0">
+   <topic language="en_US" path="customer/customer_enu.top"/>
+   <topic language="zh_CN" path="customer/customer_mnc.top"/>
+   <topic language="zh_TW" path="customer/customer_mnt.top"/>
+  </dialogContent>
+ </contents>
+ <requirements>
+  <naoqiRequirement minVersion="2.5"/>
+  <robotRequirement model="JULIETTE_Y20"/>
+ </requirements>
+</package>
